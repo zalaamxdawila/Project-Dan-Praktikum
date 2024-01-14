@@ -1,0 +1,1 @@
+SELECT * ,(SUM(pembayaran.Jumlah_Pulsa)) AS Total_pengeluaran_Pulsa,(SUM(pembayaran.Harga)) AS Total_Pendapatan_Kotor,((SUM(pembayaran.Jumlah_Pulsa))-(SUM(pembayaran.Harga))) AS Total_Pendapatan FROM `pembayaran`;
